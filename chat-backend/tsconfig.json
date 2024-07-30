@@ -1,0 +1,15 @@
+
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,                  
+    "forceConsistentCasingInFileNames": true, 
+    "outDir": "dist",
+  },
+  "include": ["src/**/*", "index.ts"],
+}

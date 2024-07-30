@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Messaging</title>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.3/firebase-messaging.js"></script>
+    <style>
+        /* Basic styles for the chat and group boxes */
+        .container {
+            display: flex;
+            gap: 10px;
+        }
+        #chatBox, #groupBox {
+            width: 50%;
+            height: 300px;
+            border: 1px solid #ccc;
+            overflow-y: scroll;
+            padding: 10px;
+            box-sizing: border-box;
+            background: #f9f9f9;
+        }
+        #chatBox {
+            background: #e0f7fa;
+        }
+        #groupBox {
+            background: #f1f8e9;
+        }
+        #chatInput {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+        /* Style for dropdowns and buttons */
+        .control-group {
+            margin-top: 20px;
+        }
+        select, button {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Send Notification</h1>
+    <form id="messageForm">
+        <label for="registrationToken">Registration Token:</label>
+        <input type="text" id="registrationToken" name="registrationToken" required>
+        <br><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <br><br>
+        <button type="submit">Send Message</button>
+    </form>
+    <p id="responseMessage"></p>
+
+    <!-- Dropdowns and buttons for topic subscription/unsubscription -->
+    <div class="control-group">
+        <label for="subscribeTopic">Subscribe to Topic:</label>
+        <select id="subscribeTopic">
+            <option value="Group-A">Group-A</option>
+            <option value="Group-B">Group-B</option>
+            <option value="Group-C">Group-C</option>
+        </select>
+        <button id="subscribeButton">Subscribe</button>
+    </div>
+
+    <div class="control-group">
+        <label for="unsubscribeTopic">Unsubscribe from Topic:</label>
+        <select id="unsubscribeTopic">
+            <option value="Group-A">Group-A</option>
+            <option value="Group-B">Group-B</option>
+            <option value="Group-C">Group-C</option>
+        </select>
+        <button id="unsubscribeButton">Unsubscribe</button>
+    </div>
+
+    <!-- Containers for chat box and group box -->
+    <div class="container">
+        <div id="chatBox">
+            <h3>World Chat</h3>
+        </div>
+        <div id="groupBox">
+            <h3>Group Box</h3>
+            <!-- Add any content for the group box here -->
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+    <script type="module" src="getToken.js"></script>
+    <script type="module" src="receiveMessage.js"></script>
+</body>
+</html>

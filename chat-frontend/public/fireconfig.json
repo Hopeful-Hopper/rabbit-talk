@@ -1,0 +1,11 @@
+{
+  "FIREBASE_API_KEY": "AIzaSyCIlI6isIaDakLeEVWoYWoQnK6NciZQUjc",
+  "FIREBASE_AUTH_DOMAIN": "rabbits-island.firebaseapp.com",
+  "FIREBASE_DATABASE_URL": "https://rabbits-island-default-rtdb.firebaseio.com",
+  "FIREBASE_PROJECT_ID": "rabbits-island",
+  "FIREBASE_STORAGE_BUCKET": "rabbits-island.appspot.com",
+  "FIREBASE_MESSAGING_SENDER_ID": "1012959708765",
+  "FIREBASE_APP_ID": "1:1012959708765:web:813f3323fe7abdc3822fb4",
+  "FIREBASE_MEASUREMENT_ID": "G-DH07QDFB14",
+  "FIREBASE_VAPID_KEY": "BA44dy6ICRa0iL7ebEWj6aPsRqw6R7cx308Ivc7fHAMs6tkJUVFIdJOGXZdLjA8DgET4aQ4dvsaz2qkgPOF1wTo"
+}
